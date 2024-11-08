@@ -1,0 +1,564 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.navbar {
+  background-color: #12311b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #12311b;
+}
+
+.footer-black {
+  background-color: #12311b; /* Set the background color to black */
+  color: white; /* Change the text color to white for contrast */
+}
+
+.footer-black .nav-link {
+  color: white !important; /* Ensure the links are white */
+}
+
+.footer-black .nav-link:hover {
+  color: #ccc !important; /* Change link hover color (optional) */
+}
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #282828;
+  color: #fff;
+  padding: 30px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1205px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+/* Sign Up Section (Left Column) */
+.footer-left {
+  width: 30%; /* Slightly smaller to give space */
+}
+
+/* Contact Us Section (Middle Column) */
+.footer-middle {
+  width: 35%; /* Increased width to make it more central */
+  margin-right: 40%;
+}
+
+/* Quick Links and Social Media Section (Right Column) */
+.footer-right {
+  width: 30%; /* Same width as the left column */
+}
+
+.footer-left h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer-left p {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.footer-middle h4,
+.footer-right h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin: 5px 0;
+}
+
+ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  font-size: 14px;
+  color: #aaa;
+  margin-top: 10px;
+}
+
+footer p a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+footer p a:hover {
+  text-decoration: underline;
+}
+
+/* Sign Up Form Styles */
+.signup-section {
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+  position: relative;
+  top: -65px;
+}
+
+.signup-section h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #fff;
+  position: ;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-form input[type="email"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  background-color: #333;
+  color: #fff;
+  font-size: 14px;
+}
+
+.signup-form button {
+  padding: 10px;
+  background-color: #39ef5a;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.signup-form button:hover {
+  background-color: #39ef5a;
+}
+
+.fa-square-twitter {
+  font-size: 60px;
+  color: white;
+  position: relative;
+  top: -65px;
+  margin-right: 20px;
+}
+
+.fa-square-instagram {
+  font-size: 60px;
+  print-color-adjust: white;
+  position: relative;
+  top: -65px;
+  margin-right: 31px;
+}
+
+.fa-square-facebook {
+  font-size: 60px;
+  print-color-adjust: white;
+  position: relative;
+  top: -65px;
+  margin-right: 31px;
+}
+
+/* Chat Popup */
+.chat-popup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 250px; /* Width of the chat form */
+  height: 400px; /* Height of the chat form */
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: none; /* Hidden by default */
+  z-index: 1000;
+  font-family: Arial, sans-serif;
+  border-radius: 8px; /* Rounded corners */
+}
+
+/* Form Container */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Chat Box (Message Area) */
+.chat-box {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fafafa;
+  height: 60%; /* Control the height */
+  font-size: 14px; /* Increased font size */
+}
+
+/* Message Styles */
+.message {
+  background-color: #e0e0e0;
+  padding: 6px;
+  margin-bottom: 6px;
+  border-radius: 4px;
+  font-size: 12px; /* Smaller font size */
+}
+
+/* Textarea */
+textarea {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-bottom: 8px;
+  resize: none;
+  height: 50px; /* Increased height for better typing experience */
+  font-size: 14px; /* Font size for typing area */
+}
+
+/* Buttons */
+.btn {
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #39ef5a;
+  color: rgb(239, 238, 238);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 14px; /* Consistent font size */
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #2ae14b; /* Slightly darker green */
+}
+
+/* Cancel Button */
+.cancel {
+  background-color: #18a439;
+}
+
+.cancel:hover {
+  background-color: #c82333; /* Red color for cancel */
+}
+
+/* Open Chat Button */
+.open-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 12px;
+  background-color: #39ef5a;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px; /* Slightly larger font size for readability */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.open-button:hover {
+  background-color: #2ae14b; /* Darker green on hover */
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 600px) {
+  .chat-popup {
+    width: 80%; /* Make the chat form wider on mobile */
+    height: 350px; /* Slightly shorter height on small screens */
+  }
+
+  .open-button {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  textarea {
+    font-size: 14px; /* Adjust font size for small screens */
+  }
+
+  .btn {
+    font-size: 12px; /* Smaller buttons for small screens */
+  }
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Distribute space between elements */
+  align-items: center;
+  background-color: #12311b;
+  padding: 10px 20px;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-title {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  flex-grow: 1; /* This makes the title take up available space */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-end; /* Align links to the right */
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a,
+.btn {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 15px;
+  display: inline-block;
+  border: none;
+  background: none;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover,
+.btn:hover {
+  background-color: #12311b;
+  border-radius: 5px;
+}
+
+.btn {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn i {
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+}
+
+.navbar-title {
+  margin-left: 190px; /* Adjust the value as needed */
+}
+
+/* Ensure "Our Mission" section is clearly separated */
+.our-mission {
+  margin-bottom: 30px; /* Adds space below the mission section */
+  padding: 20px; /* Optional: Adds padding around the section */
+  background-color: #fff; /* Background color to separate visually */
+}
+
+/* Card Styling */
+.card {
+  background-color: #fff; /* White background for the card */
+  border: 1px solid #ddd; /* Border around the card */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow around the card */
+  margin: 20px auto; /* Centers the card horizontally and adds vertical margin */
+  max-width: 800px; /* Optional: limit card's maximum width */
+  padding: 20px; /* Padding inside the card */
+}
+
+/* Card Image - Ensures the image takes full width and adjusts responsively */
+.card-img-top {
+  width: 100%; /* Makes sure image fills the width of the card */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 8px 8px 0 0; /* Optional: rounds top corners */
+}
+
+/* Card Body Styling */
+.card-body {
+  padding: 20px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Card Title Styling */
+.card-title {
+  font-size: 24px;
+  margin-bottom: 15px; /* Adds space below title */
+  color: #333;
+}
+
+/* Card Text Styling */
+.card-text {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px; /* Space between paragraphs */
+}
+
+/* For Responsive Layout: Ensure cards and text flow correctly */
+@media (max-width: 768px) {
+  .card {
+    margin: 15px; /* Reduce margin for smaller screens */
+    padding: 15px; /* Reduce padding for smaller screens */
+  }
+}
+
+.carousel-inner img {
+  width: 100%; /* Makes the image take full width of the carousel */
+  height: 500px; /* Set a fixed height for all images */
+  object-fit: cover; /* Ensures that the image fills the space without stretching */
+}
+
+.align-center {
+  text-align: center;
+}
+
+/* Styling for the dropdown */
+#mountainsDropdown {
+  width: 80%; /* Set the width to 80% of its parent container to make it narrower */
+  max-width: 400px; /* Adjust maximum width to match the card (make it slightly smaller) */
+  height: 50px; /* Increase the height of the dropdown */
+  padding: 0.75rem; /* Add padding to make it look more spacious */
+  border-radius: 15px; /* Match rounded corners with the card */
+  border: 1px solid #2ba24b; /* Border color to match the card */
+  background-color: #ffffff; /* White background */
+  color: #087f47; /* Text color */
+  font-size: 1rem; /* Set the font size */
+  margin: 0 auto; /* Center the dropdown */
+  box-shadow: 0 4px 12px rgba(44, 211, 61, 0.1); /* Light shadow for depth */
+  text-align: center; /* Center the text */
+  line-height: 1.3; /* Control line-height for readability */
+  length: ;
+}
+
+/* Focused state for dropdown */
+#mountainsDropdown:focus {
+  border-color: #087f47; /* Darker border color when focused */
+  outline: none; /* Remove default browser outline */
+  box-shadow: 0 0 0 3px rgba(12, 155, 72, 0.2); /* Green outline when focused */
+}
+
+/* Styling for the options in the dropdown */
+#mountainsDropdown option {
+  padding: 1rem; /* Add padding for better spacing between options */
+  font-size: 1.1rem; /* Slightly larger font for options */
+  background-color: #ffffff; /* White background for options */
+  color: #087f47; /* Text color for options */
+  line-height: 1.8; /* Add more spacing between options for better readability */
+}
+
+/* Hover effect for options */
+#mountainsDropdown option:hover {
+  background-color: #087f47; /* Dark green background on hover */
+  color: #ffffff; /* White text color on hover */
+}
+
+.info-card {
+  width: 18rem;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.info-card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.card-body {
+  padding: 1rem;
+  text-align: center;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.5rem;
+  line-height: 1.4;
+}
+
+
+
+

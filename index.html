@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adventure Outdoors</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <main>
+      <!-- Header with Navigation -->
+      <div class="container-fluid">
+        <header>
+          <nav class="navbar mt-4">
+            <div class="navbar-left">
+              <button class="btn" onclick="window.location.href='index.html'">
+                <i class="fa fa-home"></i>
+              </button>
+            </div>
+
+            <h1 class="navbar-title">Outdoor Adventures</h1>
+            <ul class="nav-links">
+              <li><a href="national-parks.html">National Parks</a></li>
+              <li><a href="mountains.html">Mountains</a></li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+
+      <!-- Carousel -->
+      <div class="container mt-4">
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+          <!-- Indicators/dots -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+          </div>
+
+          <!-- Slideshow/carousel images -->
+          <div class="carousel-inner" style="width: 98%; margin: 0 auto">
+            <div class="carousel-item active">
+              <img src="myimages/outdoorpic.jpeg" alt="Los Angeles" class="d-block w-100" />
+            </div>
+            <div class="carousel-item">
+              <img src="myimages/nationalpk1.jpg" alt="Chicago" class="d-block w-100" />
+            </div>
+            <div class="carousel-item">
+              <img src="myimages/pk2.jpg" alt="New York" class="d-block w-100" />
+            </div>
+          </div>
+
+          <!-- Left and right controls/icons -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mission Statement -->
+      <div class="container mt-4">
+        <div class="text-center">
+          <h2>Our Mission</h2>
+          <p>
+            At Outdoor Adventures, our mission is to inspire and empower families and friends to reconnect with nature
+            and explore the great outdoors together. We believe that shared adventures in the natural world create
+            lasting memories, strengthen bonds, and promote well-being. Whether it's hiking through lush forests,
+            camping under the stars, or discovering new trails, we are committed to providing experiences that bring
+            people closer to each other and to the beauty of the world around them. Through our carefully curated trips,
+            expert guidance, and passion for outdoor exploration, we aim to make the outdoors accessible and enjoyable
+            for everyone, regardless of age or experience.
+          </p>
+        </div>
+
+        <!-- Card Section -->
+        <div class="card mt-4">
+          <img class="card-img-top" src="myimages/waterfalls.jpg" alt="Card image cap" />
+          <div class="card-body">
+            <h5 class="card-title">"Reconnect with Nature: Your Perfect Escape Awaits"</h5>
+            <p class="card-text">
+              Escape the hustle and bustle of everyday life and reconnect with the natural world by planning your visit
+              with us. Whether you are seeking the tranquility of lush forests, the serenity of crystal-clear lakes, or
+              the breathtaking views from mountain peaks, we offer a variety of destinations designed to rejuvenate your
+              mind, body, and soul. Explore scenic trails, observe wildlife in their natural habitats, or simply unwind
+              in the peace of nature. With expert guides, comfortable amenities, and a deep commitment to preserving the
+              environment, we ensure that your experience will be unforgettable. Let us help you create memories that
+              last a lifetime—come, embrace the beauty and serenity that only nature can offer.
+            </p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Top Activities Section -->
+      <h3 class="text-center">Explore Our Top Activities</h3>
+
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card">
+              <img src="myimages/camping.jpg" class="card-img-top" alt="Camping" />
+              <div class="card-body">
+                <h5 class="card-title">Camping</h5>
+                <p class="card-text">Enjoy the nature and camp with us.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="myimages/kayak.jpg" class="card-img-top" alt="Kayak" />
+              <div class="card-body">
+                <h5 class="card-title">Kayak</h5>
+                <p class="card-text">Book your Kayak tour now.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="myimages/hiking.jpg" class="card-img-top" alt="Hiking" />
+              <div class="card-body">
+                <h5 class="card-title">Hiking</h5>
+                <p class="card-text">Explore new trails and discover the beauty of nature.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chat Button -->
+      <button class="open-button" onclick="openForm()">Chat with Us</button>
+
+      <!-- The Chat Form (Hidden Initially) -->
+      <div class="chat-popup" id="myForm">
+        <form action="#" class="form-container">
+          <h1>Chat</h1>
+          <div class="chat-box" id="chatBox"></div>
+          <textarea id="msg" placeholder="Type message..." name="msg" required></textarea>
+          <button type="button" class="btn" onclick="sendMessage()">Send</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="container-fluid row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top footer-black">
+      <div class="col mb-3 d-flex flex-column">
+        <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+        <div class="container" id="containersign">
+          <div class="va-bar"></div>
+          <div class="signup-section">
+            <h4>Sign Up for Our Newsletter</h4>
+            <form action="#" method="post" class="signup-form">
+              <input type="email" name="email" placeholder="Enter your email" required />
+              <button type="submit" class="signup-btn">Sign Up</button>
+            </form>
+          </div>
+        </div>
+        <div class="container" id="icons">
+          <i class="fa-brands fa-square-twitter"></i>
+          <i class="fa-brands fa-square-instagram"></i>
+          <i class="fa-brands fa-square-facebook"></i>
+        </div>
+        <p class="text-body-white mt-3 mb-4">© 2024 Outdoor Adventures</p>
+      </div>
+
+      <div class="col mb-3">
+        <h5>Company</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Terms & Conditions</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Blog</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Facebook</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">TikTok</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Twitter</a></li>
+        </ul>
+      </div>
+
+      <div class="col mb-3">
+        <h5>Plan Trip</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Find A Trip</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Why Travel With Us</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Special Offers</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Reviews</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About Us</a></li>
+        </ul>
+      </div>
+
+      <div class="col mb-3">
+        <h5>Support</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contact Us</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Chat Now</a></li>
+          <li class="nav-item mb-2">
+            <a href="mailto:info@paws4all.com" class="nav-link p-0 text-body-secondary"
+              >Email: info@OutdoorAdventures.com</a
+            >
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">Customer Service</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script>
+      // Function to open the chat form
+      function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+
+      // Function to close the chat form
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
+
+      // Function to send a message
+      function sendMessage() {
+        const msg = document.getElementById("msg").value;
+        if (msg.trim() !== "") {
+          const chatBox = document.getElementById("chatBox");
+          const messageDiv = document.createElement("div");
+          messageDiv.classList.add("message");
+          messageDiv.innerText = msg;
+          chatBox.appendChild(messageDiv);
+          document.getElementById("msg").value = ""; // Clear the textarea
+          chatBox.scrollTop = chatBox.scrollHeight; // Scroll to the bottom
+        }
+      }
+    </script>
+  </body>
+</html>
